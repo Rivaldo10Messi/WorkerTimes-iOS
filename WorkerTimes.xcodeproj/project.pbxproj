@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		712074281B8EF3F4004452B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074271B8EF3F4004452B2 /* AppDelegate.swift */; };
-		7120742A1B8EF3F4004452B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074291B8EF3F4004452B2 /* ViewController.swift */; };
+		7120742A1B8EF3F4004452B2 /* PunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074291B8EF3F4004452B2 /* PunchViewController.swift */; };
 		7120742D1B8EF3F4004452B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7120742B1B8EF3F4004452B2 /* Main.storyboard */; };
 		7120742F1B8EF3F4004452B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7120742E1B8EF3F4004452B2 /* Images.xcassets */; };
 		712074321B8EF3F4004452B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712074301B8EF3F4004452B2 /* LaunchScreen.xib */; };
 		7120743E1B8EF3F5004452B2 /* WorkerTimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7120743D1B8EF3F5004452B2 /* WorkerTimesTests.swift */; };
-		712074481B8F097C004452B2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074471B8F097C004452B2 /* TableViewController.swift */; };
+		712074481B8F097C004452B2 /* WorkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074471B8F097C004452B2 /* WorkTableViewController.swift */; };
 		7120744A1B8F0990004452B2 /* CellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712074491B8F0990004452B2 /* CellViewController.swift */; };
+		719C44521B93F5A1001FF988 /* BottomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C44511B93F5A0001FF988 /* BottomTabBarController.swift */; };
 		C7F0709BEE55CAECF4344E83 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D7D342A77560A4C001D582 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,15 +35,16 @@
 		712074221B8EF3F4004452B2 /* WorkerTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkerTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712074261B8EF3F4004452B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712074271B8EF3F4004452B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		712074291B8EF3F4004452B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		712074291B8EF3F4004452B2 /* PunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchViewController.swift; sourceTree = "<group>"; };
 		7120742C1B8EF3F4004452B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7120742E1B8EF3F4004452B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712074311B8EF3F4004452B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		712074371B8EF3F5004452B2 /* WorkerTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkerTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7120743C1B8EF3F5004452B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7120743D1B8EF3F5004452B2 /* WorkerTimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerTimesTests.swift; sourceTree = "<group>"; };
-		712074471B8F097C004452B2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		712074471B8F097C004452B2 /* WorkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewController.swift; sourceTree = "<group>"; };
 		712074491B8F0990004452B2 /* CellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewController.swift; sourceTree = "<group>"; };
+		719C44511B93F5A0001FF988 /* BottomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomTabBarController.swift; sourceTree = "<group>"; };
 		782A43154C344BC2E6220363 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +90,11 @@
 		712074241B8EF3F4004452B2 /* WorkerTimes */ = {
 			isa = PBXGroup;
 			children = (
-				712074271B8EF3F4004452B2 /* AppDelegate.swift */,
-				712074291B8EF3F4004452B2 /* ViewController.swift */,
 				7120742B1B8EF3F4004452B2 /* Main.storyboard */,
-				712074471B8F097C004452B2 /* TableViewController.swift */,
+				719C44511B93F5A0001FF988 /* BottomTabBarController.swift */,
+				712074271B8EF3F4004452B2 /* AppDelegate.swift */,
+				712074291B8EF3F4004452B2 /* PunchViewController.swift */,
+				712074471B8F097C004452B2 /* WorkTableViewController.swift */,
 				712074491B8F0990004452B2 /* CellViewController.swift */,
 				7120742E1B8EF3F4004452B2 /* Images.xcassets */,
 				712074301B8EF3F4004452B2 /* LaunchScreen.xib */,
@@ -293,8 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7120742A1B8EF3F4004452B2 /* ViewController.swift in Sources */,
-				712074481B8F097C004452B2 /* TableViewController.swift in Sources */,
+				7120742A1B8EF3F4004452B2 /* PunchViewController.swift in Sources */,
+				719C44521B93F5A1001FF988 /* BottomTabBarController.swift in Sources */,
+				712074481B8F097C004452B2 /* WorkTableViewController.swift in Sources */,
 				7120744A1B8F0990004452B2 /* CellViewController.swift in Sources */,
 				712074281B8EF3F4004452B2 /* AppDelegate.swift in Sources */,
 			);
@@ -445,6 +449,7 @@
 		};
 		712074451B8EF3F5004452B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46AB3733DD7AF915F6C89954 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -464,6 +469,7 @@
 		};
 		712074461B8EF3F5004452B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782A43154C344BC2E6220363 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

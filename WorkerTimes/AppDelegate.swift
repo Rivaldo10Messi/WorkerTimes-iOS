@@ -12,7 +12,27 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //private var myTabBarController: UITabBarController!
+    
+    /*
+    アプリケーション起動時に呼ばれるメソッド.
+    */
+/*
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        
+        // Override point for customization after application launch.
+        
+        // UIWindowを生成.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // rootViewControllerにMainTabBarControllerを設定
+        self.window?.rootViewController = BottomTabBarController()
+        
+        self.window?.makeKeyAndVisible()
+        
+        return true
+    }
+*/
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.

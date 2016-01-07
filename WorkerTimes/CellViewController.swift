@@ -14,15 +14,15 @@ class CellViewController: UIViewController {
     var info : String?
     
     // Label
-    @IBOutlet weak var detailLabel: UILabel?
+    @IBOutlet weak var myLabel: UILabel?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 天気情報を突っ込む
-        detailLabel?.textColor = UIColor.whiteColor()
-        detailLabel?.text = info!
+        myLabel?.textColor = UIColor.whiteColor()
+        myLabel?.text = info!
         
         // Viewの背景色を青にする.
         self.view.backgroundColor = UIColor.blueColor()

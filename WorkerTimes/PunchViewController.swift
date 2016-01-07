@@ -10,16 +10,73 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-class ViewController: UIViewController {
+class PunchViewController: UIViewController {
+    
+    private var punchButton: UIButton!
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        
+        // Viewの背景色を白に設定する.
+        self.view.backgroundColor = UIColor.whiteColor()
+        
+        //tabBarItemのアイコンをFeaturedに、タグを1と定義する.
+        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    required override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
     
     // ビューのロード完了時に呼ばれる
     override func viewDidLoad() {
         super.viewDidLoad()
         // json取得->tableに突っ込む
-        println("makeTA")
+        
         //makeTableData()
         
         //requestAlamofire()
+        
+        // タイトルを設定する.
+        self.title = "打刻"	
+        
+        // タグを設定する.
+        punchButton?.tag = 1
+        
+        // イベントを追加する.
+        punchButton?.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        
+        // スワイプ認識.
+        //let pageSwipe = UISwipeGestureRecognizer(target: self, action: "swipeGesture:")
+        //pageSwipe.direction = UISwipeGestureRecognizerDirection.Left
+        //self.view.addGestureRecognizer(pageSwipe)
+        
+    }
+    
+    /*
+    スワイプイベント
+    打刻画面から勤怠一覧画面へと遷移
+    internal func swipeGesture(sender: UISwipeGestureRecognizer){
+        let touches = sender.numberOfTouches()
+        println("swipeGesture:")
+        //swipeLabel.text = "\(touches)"
+        performSegueWithIdentifier("toTableViewController", sender: nil)
+    }
+    */
+    
+    /*
+    ボタンのアクション時に設定したメソッド.
+    打刻処理をする
+    */
+    internal func onClickMyButton(sender: UIButton){
+        println("onClickMyButton:")
+        println("sender.currentTitile: \(sender.currentTitle)")
+        println("sender.tag:\(sender.tag)")
+        
     }
     
     /*
@@ -109,6 +166,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // 勤怠一覧画面に遷移する場合に値を渡したい場合はここ
+    //override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+    //    if segue.identifier == "toTableViewController" {
+    //    }
+    //}
     
 }
 
